@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  vsftp:
+    build: .
+    ports:
+      - "21:21"
+      - "20:20"
+      - "21000:21010"
+    # volumes:
+    #   - ./vsftpd:/etc/vsftp:ro
+# volumes:
+#   vsftp:

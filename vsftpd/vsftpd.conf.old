@@ -1,0 +1,20 @@
+listen=YES
+anonymous_enable=YES
+connect_from_port_20=YES
+xferlog_enable=YES
+dirmessage_enable=YES
+
+no_anon_password=YES
+pasv_enable=YES
+background=NO
+anon_root=/srv/ftp/pub
+pasv_max_port=21000
+pasv_min_port=21010
+
+ftpd_banner=Welcome to another FTP service
+
+#vsftpd_log_file=/var/log/vsftpd.log
+log_ftp_protocol=YES 
+dual_log_enable=YES
+
+seccomp_sandbox=NO
